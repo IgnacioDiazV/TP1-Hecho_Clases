@@ -2,28 +2,35 @@
 import HomePages from "./pages/HomePages";
 
 function App() {
-  // Datos a pasar
-  let nombre = "Pablo";
-
-  let persona = {
-    nombre: 'Carlos',
+  const nombre = "Pablo";
+  const persona = {
+    nombre: "Carlos",
     edad: 20,
-    curso: 'programación',
-    Asistencia: false
+    curso: "programación",
+    Asistencia: false,
   };
-
-  let grupo = [
-    { nombre: 'Lucas', edad: 25 },
-    { nombre: 'Luciana', edad: 19 },
-    { nombre: 'Julieta', edad: 26 },
-    { nombre: 'Jorge', edad: 30 },
-    { nombre: 'Cristian', edad: 30 }
+  const persona2 = {
+    nombre: "Ignacio",
+    edad: 22,
+    curso: "programación",
+    Asistencia: true,
+  };
+  const grupo = [
+    { nombre: "Lucas", edad: 25 },
+    { nombre: "Luciana", edad: 19 },
+    { nombre: "Julieta", edad: 26 },
+    { nombre: "Jorge", edad: 30 },
+    { nombre: "Cristian", edad: 30 },
   ];
 
   return (
     <div className="App">
-      {/* Pasa todo a HomePages */}
-      <HomePages nombre={nombre} persona={persona} grupo={grupo} />
+      <HomePages
+        nombre={nombre}
+        persona={persona}
+        persona2={persona2}
+        grupo={grupo}
+      />
     </div>
   );
 }

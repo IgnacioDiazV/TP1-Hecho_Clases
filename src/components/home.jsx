@@ -1,12 +1,12 @@
-import Main from "./main";
+import Main from "./main.jsx";
 
 const Home = (props) => {
-  const { nombre, persona, grupo } = props;
+  const { nombre, persona, persona2, grupo } = props;
 
   return (
-    <div>
-      <h2>Componente Home</h2>
-      <Main nombre={nombre} persona={persona} grupo={grupo} />
+    <div className="home-container">
+      <h2 className="main-title">Componente Home</h2>
+      <Main nombre={nombre} persona={persona} persona2={persona2} grupo={grupo} />
     </div>
   );
 };
